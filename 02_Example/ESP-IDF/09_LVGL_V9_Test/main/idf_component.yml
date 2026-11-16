@@ -1,4 +1,0 @@
-dependencies:
-  espressif/esp_lvgl_adapter: ^0.1.0-beta.2
-  espressif/esp_lcd_sh8601: ^2.0.0
-  espressif/esp_lcd_touch_ft5x06: ^1.0.7
