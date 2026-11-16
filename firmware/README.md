@@ -2,18 +2,19 @@
 
 [English](README.md) | [简体中文](README_ZH.md)
 
-Ready-to-flash firmware tested on the ESP32-S3-Touch-AMOLED-2.41-V2 board. Each file is a merged image flashed at `0x0`; the date (or upstream version) in the file name is its version. Older versions are kept; the newest is listed first.
+Factory binaries for ESP32-S3-Touch-AMOLED-2.41 V1 and V2. Select the file for your board revision; V1 and V2 firmware is not interchangeable. Both binaries retain their original names and contents.
 
-| File | Purpose |
-| --- | --- |
-| `ESP32-S3-Touch-AMOLED-2.41-V2_FactoryOnly_20260601.bin` | Factory firmware, restores the out-of-box demo |
+| Board revision | File | Purpose |
+| --- | --- | --- |
+| V2 (PCB marked Rev2.0) | [ESP32-S3-Touch-AMOLED-2.41-V2_FactoryOnly_20260601.bin](ESP32-S3-Touch-AMOLED-2.41-V2_FactoryOnly_20260601.bin) | V2 factory firmware, restores the out-of-box demo |
+| V1 (original board) | [ESP32-S3-Touch-AMOLED-2.41-Factory.bin](ESP32-S3-Touch-AMOLED-2.41-Factory.bin) | Original V1 factory firmware, retained from the V1 repository |
 
-Flash with esptool:
+These are merged images flashed at `0x0`. Replace `<PORT>` with your serial port and `<FIRMWARE.bin>` with the file selected above:
 
 ```bash
 python -m pip install esptool
 esptool.py --chip esp32s3 --port <PORT> erase_flash
-esptool.py --chip esp32s3 --port <PORT> write_flash 0x0 ESP32-S3-Touch-AMOLED-2.41-V2_FactoryOnly_20260601.bin
+esptool.py --chip esp32s3 --port <PORT> write_flash 0x0 <FIRMWARE.bin>
 ```
 
-The factory firmware source is in [`examples/factory`](../examples/factory/).
+The factory application source in [`examples/factory`](../examples/factory/) is for V2 only. V1 is provided as a binary only; V1 examples and factory application source are not included.

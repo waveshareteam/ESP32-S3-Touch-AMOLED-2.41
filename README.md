@@ -1,15 +1,15 @@
 <div align="center">
-  <h1>ESP32-S3-Touch-AMOLED-2.41-V2</h1>
+  <h1>ESP32-S3-Touch-AMOLED-2.41</h1>
   <p><strong>ESP32-S3 2.41-inch 600 x 450 QSPI AMOLED touch development board (V2)</strong></p>
   <p><strong>English</strong> | <a href="README_ZH.md">简体中文</a></p>
   <p>
-    <a href="https://github.com/waveshareteam/ESP32-S3-Touch-AMOLED-2.41-V2/actions/workflows/build.yml"><img alt="Build" src="https://github.com/waveshareteam/ESP32-S3-Touch-AMOLED-2.41-V2/actions/workflows/build.yml/badge.svg"></a>
-    <a href="https://github.com/waveshareteam/ESP32-S3-Touch-AMOLED-2.41-V2/releases/latest"><img alt="Latest Release" src="https://img.shields.io/github/v/release/waveshareteam/ESP32-S3-Touch-AMOLED-2.41-V2"></a>
-    <a href="LICENSE"><img alt="License" src="https://img.shields.io/github/license/waveshareteam/ESP32-S3-Touch-AMOLED-2.41-V2"></a>
+    <a href="https://github.com/waveshareteam/ESP32-S3-Touch-AMOLED-2.41/actions/workflows/build.yml"><img alt="Build" src="https://github.com/waveshareteam/ESP32-S3-Touch-AMOLED-2.41/actions/workflows/build.yml/badge.svg"></a>
+    <a href="https://github.com/waveshareteam/ESP32-S3-Touch-AMOLED-2.41/releases/latest"><img alt="Latest Release" src="https://img.shields.io/github/v/release/waveshareteam/ESP32-S3-Touch-AMOLED-2.41"></a>
+    <a href="LICENSE"><img alt="License" src="https://img.shields.io/github/license/waveshareteam/ESP32-S3-Touch-AMOLED-2.41"></a>
   </p>
   <p>
     <a href="https://www.waveshare.com/esp32-s3-touch-amoled-2.41.htm">🌐 Product</a> &middot;
-    <a href="https://github.com/waveshareteam/ESP32-S3-Touch-AMOLED-2.41-V2/releases/latest">📦 Firmware</a> &middot;
+    <a href="https://github.com/waveshareteam/ESP32-S3-Touch-AMOLED-2.41/releases/latest">📦 Firmware</a> &middot;
     <a href="examples/esp-idf/">🧩 ESP-IDF</a> &middot;
     <a href="examples/arduino/examples/">🔧 Arduino</a> &middot;
     <a href="hardware/">📚 Documentation</a>
@@ -21,7 +21,7 @@
 
 ## ✨ Overview
 
-This repository provides Arduino and ESP-IDF examples, the factory application and hardware resources for ESP32-S3-Touch-AMOLED-2.41 V2. V1 and V2 use different display, touch and expanded I/O pins; select these programs for a PCB marked Rev2.0.
+This repository provides Arduino and ESP-IDF examples, the factory application source and hardware resources for ESP32-S3-Touch-AMOLED-2.41 V2 (PCB marked Rev2.0). V1 and V2 use different display, touch and expanded I/O pins; these examples and sources are for V2 only. For V1, only the original factory binary is retained in [`firmware`](firmware/); V1 examples and factory application source are not included.
 
 | Feature | Device / interface |
 | --- | --- |
@@ -35,9 +35,9 @@ This repository provides Arduino and ESP-IDF examples, the factory application a
 
 ## 📦 Quick Start
 
-Factory firmware (restores the out-of-box demo): download the file whose name contains `FactoryOnly` from the [`firmware`](firmware/) folder and follow the [flashing instructions](firmware/README.md).
+Factory firmware (restores the out-of-box demo): select the V1 or V2 binary for your board from the [firmware list and flashing instructions](firmware/README.md). The two board revisions require different firmware.
 
-When an example release is available, download its ready-to-flash package from the [latest release](https://github.com/waveshareteam/ESP32-S3-Touch-AMOLED-2.41-V2/releases/latest):
+When an example release is available, download its ready-to-flash package from the [latest release](https://github.com/waveshareteam/ESP32-S3-Touch-AMOLED-2.41/releases/latest):
 
 1. Download the `*-combined.zip` for the example and framework version you need.
 2. Extract the archive and install esptool with `python -m pip install esptool`.
@@ -95,7 +95,7 @@ See [product.json](.github/product.json) for framework versions and Arduino boar
 
 ## 🤝 Support
 
-- Example or repository problem: [open an issue](https://github.com/waveshareteam/ESP32-S3-Touch-AMOLED-2.41-V2/issues/new/choose).
+- Example or repository problem: [open an issue](https://github.com/waveshareteam/ESP32-S3-Touch-AMOLED-2.41/issues/new/choose).
 - Product usage, hardware or order questions: [Waveshare support](https://service.waveshare.com/).
 
 ## 📄 License

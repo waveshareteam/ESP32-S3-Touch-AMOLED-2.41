@@ -1,15 +1,15 @@
 <div align="center">
-  <h1>ESP32-S3-Touch-AMOLED-2.41-V2</h1>
+  <h1>ESP32-S3-Touch-AMOLED-2.41</h1>
   <p><strong>ESP32-S3 2.41 英寸 600 × 450 QSPI AMOLED 触摸开发板（V2）</strong></p>
   <p><a href="README.md">English</a> | <strong>简体中文</strong></p>
   <p>
-    <a href="https://github.com/waveshareteam/ESP32-S3-Touch-AMOLED-2.41-V2/actions/workflows/build.yml"><img alt="构建" src="https://github.com/waveshareteam/ESP32-S3-Touch-AMOLED-2.41-V2/actions/workflows/build.yml/badge.svg"></a>
-    <a href="https://github.com/waveshareteam/ESP32-S3-Touch-AMOLED-2.41-V2/releases/latest"><img alt="最新版本" src="https://img.shields.io/github/v/release/waveshareteam/ESP32-S3-Touch-AMOLED-2.41-V2"></a>
-    <a href="LICENSE"><img alt="许可证" src="https://img.shields.io/github/license/waveshareteam/ESP32-S3-Touch-AMOLED-2.41-V2"></a>
+    <a href="https://github.com/waveshareteam/ESP32-S3-Touch-AMOLED-2.41/actions/workflows/build.yml"><img alt="构建" src="https://github.com/waveshareteam/ESP32-S3-Touch-AMOLED-2.41/actions/workflows/build.yml/badge.svg"></a>
+    <a href="https://github.com/waveshareteam/ESP32-S3-Touch-AMOLED-2.41/releases/latest"><img alt="最新版本" src="https://img.shields.io/github/v/release/waveshareteam/ESP32-S3-Touch-AMOLED-2.41"></a>
+    <a href="LICENSE"><img alt="许可证" src="https://img.shields.io/github/license/waveshareteam/ESP32-S3-Touch-AMOLED-2.41"></a>
   </p>
   <p>
     <a href="https://www.waveshare.com/esp32-s3-touch-amoled-2.41.htm">🌐 产品</a> &middot;
-    <a href="https://github.com/waveshareteam/ESP32-S3-Touch-AMOLED-2.41-V2/releases/latest">📦 固件</a> &middot;
+    <a href="https://github.com/waveshareteam/ESP32-S3-Touch-AMOLED-2.41/releases/latest">📦 固件</a> &middot;
     <a href="examples/esp-idf/">🧩 ESP-IDF</a> &middot;
     <a href="examples/arduino/examples/">🔧 Arduino</a> &middot;
     <a href="hardware/">📚 文档</a>
@@ -21,7 +21,7 @@
 
 ## ✨ 概述
 
-本仓库提供 ESP32-S3-Touch-AMOLED-2.41 V2 的 Arduino、ESP-IDF 示例、出厂程序和硬件资料。V1 与 V2 的显示、触摸和扩展 I/O 引脚不同，请根据 PCB 的 Rev2.0 标识选择对应程序。
+本仓库提供 ESP32-S3-Touch-AMOLED-2.41 V2（PCB 标识 Rev2.0）的 Arduino、ESP-IDF 示例、出厂程序源码和硬件资料。V1 与 V2 的显示、触摸和扩展 I/O 引脚不同，这些示例和源码仅适用于 V2。V1 仅在 [`firmware`](firmware/) 中保留原出厂 BIN，不包含 V1 示例和出厂程序源码。
 
 | 功能 | 器件或接口 |
 | --- | --- |
@@ -35,9 +35,9 @@
 
 ## 📦 快速开始
 
-出厂固件（恢复开箱演示）：在 [`firmware`](firmware/) 目录下载文件名带 `FactoryOnly` 的文件，并按[烧录说明](firmware/README_ZH.md)操作。
+出厂固件（恢复开箱演示）：根据开发板的 V1 或 V2 硬件版本，在[固件列表与烧录说明](firmware/README_ZH.md)中选择对应 BIN。两个硬件版本需要使用各自的固件。
 
-示例版本发布后，可在[最新版本](https://github.com/waveshareteam/ESP32-S3-Touch-AMOLED-2.41-V2/releases/latest)下载示例固件包：
+示例版本发布后，可在[最新版本](https://github.com/waveshareteam/ESP32-S3-Touch-AMOLED-2.41/releases/latest)下载示例固件包：
 
 1. 下载所需示例和框架版本对应的 `*-combined.zip`。
 2. 解压后通过 `python -m pip install esptool` 安装 esptool。

@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/waveshareteam/esp32-repo-template/v1/schema/product.schema.json",
-  "product": "ESP32-S3-Touch-AMOLED-2.41-V2",
+  "product": "ESP32-S3-Touch-AMOLED-2.41",
   "product_url": "https://www.waveshare.com/esp32-s3-touch-amoled-2.41.htm",
   "tier": 1,
   "target": "esp32s3",
